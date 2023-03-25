@@ -1,7 +1,7 @@
-let username = "samueld4vd";
+let username = "Audifonos Inalambricos F-9";
 const userAuthor = "ambraah1";
 let linkAuthor = "https://ambraah1.github.io/";
-let title = "Mi portafolio";
+let title = "F-9";
 let navbarCollapse1 = "Inicio";
 let navbarCollapse2 = "Sobre mí";
 let navbarCollapse3 = "Redes";
