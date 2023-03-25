@@ -2,9 +2,9 @@ let username = "Audifonos Inalambricos F-9";
 const userAuthor = "ambraah1";
 let linkAuthor = "https://ambraah1.github.io/";
 let title = "F-9";
-let navbarCollapse1 = "Inicio";
-let navbarCollapse2 = "Descripción";
-let navbarCollapse3 = "Redes";
+let navbarContent1 = "Inicio";
+let navbarContent2 = "Descripción";
+let navbarContent3 = "Redes";
 
 let metaViewport = `<meta name="viewport" content="width=device-width, initial-scale=1">`;
 let metaCharset = `<meta charset="utf-8">`;
@@ -24,13 +24,13 @@ let navbar = `
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#home">${navbarCollapse1}</a>
+        <a class="nav-link" aria-current="page" href="#home">${navbarContent1}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#aboutUs">${navbarCollapse2}</a>
+        <a class="nav-link" href="#aboutUs">${navbarContent2}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#social">${navbarCollapse3}</a>
+        <a class="nav-link" href="#social">${navbarContent3}</a>
       </li>
     </ul>
   </div>
