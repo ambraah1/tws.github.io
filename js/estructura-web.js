@@ -59,11 +59,11 @@ ${btnLinkAutor}
 let scriptBoostrap = `<script src="./js/bootstrap.bundle.min.js"></script>`;
 let head = `
 <head>
-    ${metaCharset}
-    ${metaViewport}
-    ${linkBootstrapCSS}
-    ${linkStylesheetCSS}
-    ${titlePage}
+${metaCharset}
+${metaViewport}
+${linkBootstrapCSS}
+${linkStylesheetCSS}
+${titlePage}
 </head>`;
 let body = `<body>
 ${navbar}
