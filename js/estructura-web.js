@@ -6,6 +6,7 @@ let navbarContent1 = "Inicio";
 let navbarContent2 = "Descripción";
 let navbarContent3 = "Redes";
 
+let separacionSection = `<hr>`;
 let metaViewport = `<meta name="viewport" content="width=device-width, initial-scale=1">`;
 let metaCharset = `<meta charset="utf-8">`;
 let linkBootstrapCSS = `<link href="./css/bootstrap.min.css" rel="stylesheet">`;
@@ -41,12 +42,16 @@ let sections = `
 <section id="home" class="heightSec">
 
 </section>
+${separacionSection}
 <section id="aboutUs" class="heightSec">
 
 </section>
+${separacionSection}
 <section id="social" class="heightSec">
 
-</section>`;
+</section>
+${separacionSection}`;
+
 let footer = `
 <footer class="text-center p-3 fw-bold">
 ${btnLinkAutor}
