@@ -3,7 +3,7 @@ const userAuthor = "ambraah1";
 let linkAuthor = "https://ambraah1.github.io/";
 let title = "F-9";
 let navbarCollapse1 = "Inicio";
-let navbarCollapse2 = "Sobre mí";
+let navbarCollapse2 = "Descripción";
 let navbarCollapse3 = "Redes";
 
 let metaViewport = `<meta name="viewport" content="width=device-width, initial-scale=1">`;
