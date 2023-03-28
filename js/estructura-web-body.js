@@ -1,14 +1,12 @@
-const username = "Audifonos Inalambricos F-9";
-const userAuthor = "ambraah1";
-const linkAuthor = "https://ambraah1.github.io/";
+let username = "Audifonos Inalambricos F-9";
+let userAuthor = "ambraah1";
+let linkAuthor = "https://ambraah1.github.io/";
 
-const navbarContent1 = "Inicio";
-const navbarContent2 = "Descripción";
-const navbarContent3 = "Redes";
-const navbarBtnArray = [["Inicio","home"],["Descripción","productDescription"]];
-const navbarBtnLoop = `
+
+let navbarBtnArray = [["Inicio","home"],["Descripción","productDescription"]];
+let navbarBtnLoop = `
 <script>
-for (const [name,href]){
+for (let [name,href] of navbarBtnArray){
   document.write('<li class="nav-item"><a class="nav-link" aria-current="page" href="#' + href + '">' + name + '</a></li>');
 }
 </script>`;
@@ -49,13 +47,13 @@ ${btnLinkAutor}
 </footer>`;
 let scriptBoostrap = `<script src="./js/bootstrap.bundle.min.js"></script>`;
 
-let body = `<body>
+let body = `
 ${navbar}
 ${sections}
 ${footer}
 ${scriptBoostrap}
-<script type="text/javascript" src="//clustrmaps.com/map_v2.js?d=doGPG6O4yhv-IoobFwRw2PjhzHZtNUMU0a1hm6XE8H0&cl=ffffff&w=a"></script>
-`
+
+`;
 
 
 
