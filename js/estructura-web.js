@@ -70,6 +70,7 @@ ${navbar}
 ${sections}
 ${footer}
 ${scriptBoostrap}
+<script type="text/javascript" src="//clustrmaps.com/map_v2.js?d=tn22wTb45x2D8I962s4UlkR6-hpICxeFi_dap1cmaSI&cl=ffffff&w=a"></script>
 </body>`
 
 
