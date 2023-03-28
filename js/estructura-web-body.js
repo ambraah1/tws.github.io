@@ -9,9 +9,7 @@ const navbarBtnArray = [["Inicio","home"],["Descripción","productDescription"]]
 const navbarBtnLoop = `
 <script>
 for (const [name,href]){
-  document.write('<li class="nav-item">
-  <a class="nav-link" aria-current="page" href="#' + href + '">' + name + '</a>
-</li>');
+  document.write('<li class="nav-item"><a class="nav-link" aria-current="page" href="#' + href + '">' + name + '</a></li>');
 }
 </script>`;
 
