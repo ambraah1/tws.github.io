@@ -1,10 +1,19 @@
-let username = "Audifonos Inalambricos F-9";
+const username = "Audifonos Inalambricos F-9";
 const userAuthor = "ambraah1";
-let linkAuthor = "https://ambraah1.github.io/";
+const linkAuthor = "https://ambraah1.github.io/";
 
-let navbarContent1 = "Inicio";
-let navbarContent2 = "Descripción";
-let navbarContent3 = "Redes";
+const navbarContent1 = "Inicio";
+const navbarContent2 = "Descripción";
+const navbarContent3 = "Redes";
+const navbarBtnArray = [["Inicio","home"],["Descripción","productDescription"]];
+const navbarBtnLoop = `
+<script>
+for (const [name,href]){
+  document.write('<li class="nav-item">
+  <a class="nav-link" aria-current="page" href="#' + href + '">' + name + '</a>
+</li>');
+}
+</script>`;
 
 let separacionSection = `<hr>`;
 
@@ -20,15 +29,7 @@ let navbar = `
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#home">${navbarContent1}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#aboutUs">${navbarContent2}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#social">${navbarContent3}</a>
-      </li>
+      ${navbarBtnLoop}
     </ul>
   </div>
 </div>
@@ -39,11 +40,7 @@ let sections = `
 
 </section>
 ${separacionSection}
-<section id="aboutUs" class="heightSec">
-
-</section>
-${separacionSection}
-<section id="social" class="heightSec">
+<section id="productDescription" class="heightSec">
 
 </section>
 ${separacionSection}`;
