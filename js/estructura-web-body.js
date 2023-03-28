@@ -1,17 +1,13 @@
 let username = "Audifonos Inalambricos F-9";
 const userAuthor = "ambraah1";
 let linkAuthor = "https://ambraah1.github.io/";
-let title = "F-9";
+
 let navbarContent1 = "Inicio";
 let navbarContent2 = "Descripción";
 let navbarContent3 = "Redes";
 
 let separacionSection = `<hr>`;
-let metaViewport = `<meta name="viewport" content="width=device-width, initial-scale=1">`;
-let metaCharset = `<meta charset="utf-8">`;
-let linkBootstrapCSS = `<link href="./css/bootstrap.min.css" rel="stylesheet">`;
-let linkStylesheetCSS = `<link rel="stylesheet" href="css/style.css">`;
-let titlePage = `<title>${title}</title>`;
+
 let btnLinkAutor = `
 <a class="btn btn-outline-secondary" href="${linkAuthor}"><i class="bi bi-chevron-double-left"></i>
 Creado por ${userAuthor} <i class="bi bi-chevron-double-right"></i></a>`;
@@ -57,21 +53,15 @@ let footer = `
 ${btnLinkAutor}
 </footer>`;
 let scriptBoostrap = `<script src="./js/bootstrap.bundle.min.js"></script>`;
-let head = `
-<head>
-${metaCharset}
-${metaViewport}
-${linkBootstrapCSS}
-${linkStylesheetCSS}
-${titlePage}
-</head>`;
+
 let body = `<body>
 ${navbar}
 ${sections}
 ${footer}
 ${scriptBoostrap}
+<script type="text/javascript" src="//clustrmaps.com/map_v2.js?d=doGPG6O4yhv-IoobFwRw2PjhzHZtNUMU0a1hm6XE8H0&cl=ffffff&w=a"></script>
 `
 
 
-document.write(head);
+
 document.write(body);
