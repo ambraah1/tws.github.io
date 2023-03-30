@@ -4,8 +4,12 @@
     background-color: white;
 }
 #home {
-    padding-top: 56px;
+    padding-top: 70px;
 }
 .heightSec {
     height: 780px;
+}
+.border-text {
+    border-style: solid;
+    padding: 10px;
 }
