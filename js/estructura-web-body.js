@@ -3,32 +3,12 @@ let userAuthor = "ambraah1";
 let linkAuthor = "https://ambraah1.github.io/";
 
 
-let navbarBtnArray = [["Inicio","home"],["Descripción","productDescription"]];
-let navbarBtnLoop = `
-<script>
-for (let [name,href] of navbarBtnArray){
-  document.write('<li class="nav-item"><a class="nav-link" aria-current="page" href="#' + href + '">' + name + '</a></li>');
-}
-</script>`;
+
 
 let btnLinkAutor = `
 <a class="btn btn-outline-secondary" href="${linkAuthor}"><i class="bi bi-chevron-double-left"></i>
 Creado por ${userAuthor} <i class="bi bi-chevron-double-right"></i></a>`;
-let navbar = `
-<nav class="navbar navbar-expand-lg navbar-light bg-default fixed-top">
-<div class="container-fluid">
-  <a class="navbar-brand" href="#home">${username}</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      ${navbarBtnLoop}
-    </ul>
-  </div>
-</div>
-</nav>
-`;
+
 let homeCardImgArray = [["images/audifono-negro.png","active"],["images/audifono-negro.png"],["images/audifono-negro.png"]];
 let homeCardImgLoop = `
 <script>
@@ -62,40 +42,55 @@ let sectionHome = `
 </div>
 <div class="col-12 col-md-6">
 <div class="border border-text rounded" style="max-width: 500px">
-<p>Auriculares F9 TWS con Bluetooth V5.1.</p>
-<p>Auriculares inalámbricos manos libres con cargador y micrófono para juegos, auriculares internos estéreo deportivos.</p>
+<div class="fw-bold">Auriculares F9 TWS con Bluetooth V5.1.</div>
+<p>Inalámbricos manos libres con cargador y micrófono para juegos, auriculares internos estéreo deportivos.</p>
 <div class="h3">CLP 12.000</div>
 <div class="h5">Color Negro</div>
-<div class="h5">Cantidad</div>
+<div class="h5">Cantidad:
+
+
 <button class="btn btn-outline-dark rounded-circle px-3" onclick="disminuir()">-</button>
 <span id="numero">1</span>
+
 <button class="btn btn-outline-dark rounded-circle px-3" onclick="aumentar()">+</button>
-<script>
-  var num = 1;
-  var numElement = document.getElementById("numero");
-
-  function aumentar() {
-    num++;
-    numElement.innerText = num;
-  }
-
-  function disminuir() {
-    if(num < 2){
-
-    }else{
-    num--;
-    numElement.innerText = num;
-    }
-  }
-</script>
+</div>
 <p>Envio gratis Machalí y Rancagua.</p>
 <p>Con garantia de 30 días.</p>
-<p class="card-text"><a class="btn btn-outline-dark text-center">Comprar</a></p>
+<p class="card-text"><a class="btn btn-outline-dark text-center">Comprarlo</a></p>
 </div>
 </div>
 </div>
 </div>`;
-let sectionProductDescription = `fgdfgdf`;
+let sectionProductDescription = `
+Auriculares inalámbricos TWS Bluetooth 5,1 auriculares deportivos Control táctil auriculares impermeables
+
+
+
+1. Bluetooth V5.1 admite la mayoría de dispositivos bluetooth y menor consumo de energía.
+
+2. Puede cargar completamente 2 auriculares alrededor de 8 veces, ofrece más tiempo de música.
+
+3. Con tecnología impermeable, ya no hay necesidad de preocuparse por el agua y el sudor.
+
+4, unidades de unidad dual de 10mms, disfrute de un fuerte sonido de música de graves profundos 9D
+
+5. Popular función de control de un botón, compatible con cambiar canciones, llamadas telefónicas y asistencia de voz de llamada.
+
+
+
+Lista de productos A, B accesorios:
+
+2 * auriculares Bluetooth
+
+1 * caja de carga
+
+1 * Cable USB
+
+1 * Manual de usuario
+
+2 x copas de auriculares (talla L,M)
+
+`;
 let sectionArray = [["home",sectionHome],["productDescription",sectionProductDescription]];
 let sectionLoop = `
 <script>
@@ -108,13 +103,16 @@ let footer = `
 <footer class="text-center p-3 fw-bold">
 ${btnLinkAutor}
 </footer>`;
+
+let scriptNavbar = `<script src="js/navbar.js"></script>`;
 let scriptBoostrap = `<script src="./js/bootstrap.bundle.min.js"></script>`;
+let scriptAmount = `<script src="js/amount.js"></script>`;
 let body = `
-${navbar}
+${scriptNavbar}
 ${sections}
 ${footer}
 ${scriptBoostrap}
-
+${scriptAmount}
 `;
 
 document.write(body);
