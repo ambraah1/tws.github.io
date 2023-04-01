@@ -21,3 +21,4 @@ let navbar = `
 </div>
 </nav>
 `;
+document.write(navbar);
