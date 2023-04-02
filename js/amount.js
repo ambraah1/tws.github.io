@@ -7,10 +7,8 @@ function aumentar() {
 }
 
 function disminuir() {
-  if(num < 2){
-
-  }else{
-  num--;
-  numElement.innerText = num;
+  if(num >= 2){
+    num--;
+    numElement.innerText = num;
   }
 }
