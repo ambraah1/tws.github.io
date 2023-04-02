@@ -1,5 +1,6 @@
 let price = 12000;
 
+let cantidad = `<span id="numero">1</span>`;
 let homeCardImgArray = [["images/audifono-negro.png","active"],["images/audifono-negro.png"],["images/audifono-negro.png"]];
 let homeCardImgLoop = `
 <script>
@@ -39,7 +40,7 @@ let sectionHome = `
 <div class="h5">Color Negro</div>
 <div class="h5">Cantidad:
 <button class="btn btn-outline-dark rounded-circle" onclick="disminuir()"><i class="bi bi-arrow-left"></i></button>
-<span id="numero">1</span>
+${cantidad}
 <button class="btn btn-outline-dark rounded-circle" onclick="aumentar()"><i class="bi bi-arrow-right"></i></button>
 </div>
 <p>Envio gratis Machalí y Rancagua.</p>
@@ -58,11 +59,11 @@ Auriculares inalámbricos TWS Bluetooth 5,1 auriculares deportivos Control táct
 <p>✅BATERIA: Su duración puede llegas hasta 5 horas y viene con un estuche de carga que te puede durar más de una semana.</p>
 <p>✅ALCANCE: Puede llegar a tener un alcance con su dispositivo hasta 10 metros.</p>
 <p>✅RESISTENCIA: Es resistente al agua como tambien por su tamaño a golpes.</p>
-<p>1. Bluetooth V5.1 admite la mayoría de dispositivos bluetooth y menor consumo de energía.</p>
-<p>2. Puede cargar completamente 2 auriculares alrededor de 8 veces, ofrece más tiempo de música.</p>
-<p>3. Con tecnología impermeable, ya no hay necesidad de preocuparse por el agua y el sudor.</p>
-<p>4. unidades de unidad dual de 10mms, disfrute de un fuerte sonido de música de graves profundos 9D</p>
-<p>5. Popular función de control de un botón, compatible con cambiar canciones, llamadas telefónicas y asistencia de voz de llamada.</p>
+<p><i class="bi bi-1-circle"></i> Bluetooth V5.1 admite la mayoría de dispositivos bluetooth y menor consumo de energía.</p>
+<p><i class="bi bi-2-circle"></i> Puede cargar completamente 2 auriculares alrededor de 8 veces, ofrece más tiempo de música.</p>
+<p><i class="bi bi-3-circle"></i> Con tecnología impermeable, ya no hay necesidad de preocuparse por el agua y el sudor.</p>
+<p><i class="bi bi-4-circle"></i> unidades de unidad dual de 10mms, disfrute de un fuerte sonido de música de graves profundos 9D</p>
+<p><i class="bi bi-5-circle"></i> Popular función de control de un botón, compatible con cambiar canciones, llamadas telefónicas y asistencia de voz de llamada.</p>
 <div class="h5">Lista de productos A, B accesorios:</div>
 <p>2 * auriculares Bluetooth</p>
 <p>1 * caja de carga</p>
